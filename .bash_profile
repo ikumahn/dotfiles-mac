@@ -17,6 +17,9 @@ export PATH=/opt/homebrew/bin/ffmpeg:$PATH
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
+# fvm
+export PATH="$PATH:$HOME/.pub-cache/bin"
+
 # prompt
 export PS1="\t[\W]\$ "
 export LSCOLORS="ExGxFxdxCxDxDxhbadExEx"
@@ -33,4 +36,13 @@ alias ....='cd ../../..'
 alias liver='cd ~/livechat/ios/liverapp'
 alias viewer='cd ~/livechat/ios/viewerapp'
 alias live='cd ~/livechat/server/livechatapi'
+
+alias python='python3'
+alias pip='pip3'
+
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[ -f /Users/ikuma/.dart-cli-completion/bash-config.bash ] && . /Users/ikuma/.dart-cli-completion/bash-config.bash || true
+## [/Completion]
 
