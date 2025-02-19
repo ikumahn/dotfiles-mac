@@ -46,3 +46,8 @@ alias pip='pip3'
 [ -f /Users/ikuma/.dart-cli-completion/bash-config.bash ] && . /Users/ikuma/.dart-cli-completion/bash-config.bash || true
 ## [/Completion]
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="$SDKMAN_DIR/candidates/java/current/bin:$PATH"
