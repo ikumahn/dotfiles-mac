@@ -20,6 +20,10 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # fvm
 export PATH="$PATH:$HOME/.pub-cache/bin"
 
+# android
+export ANDROID_HOME=$HOME/sdk/android
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH
+
 # prompt
 export PS1="\t[\W]\$ "
 export LSCOLORS="ExGxFxdxCxDxDxhbadExEx"
