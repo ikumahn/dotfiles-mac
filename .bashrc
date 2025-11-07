@@ -2,6 +2,10 @@ echo "bashrc is loaded"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(rbenv init - bash)"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
 
 # php
 export PATH=/Applications/MAMP/bin/php/php5.6.32/bin:$PATH
@@ -48,8 +52,6 @@ alias liver='cd ~/livechat/ios/liverapp'
 alias viewer='cd ~/livechat/ios/viewerapp'
 alias live='cd ~/livechat/server/livechatapi'
 
-alias python='python3'
-alias pip='pip3'
 
 
 ## [Completion]
